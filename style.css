@@ -25,6 +25,49 @@ body
 }
 
 /*************************************************************
+					Menu Bar Styling
+*************************************************************/
+
+.menu_bar
+{
+	width:100%;
+	background-color:#00BB00;
+	text-align:center;
+	padding-top:6px;
+	padding-bottom:6px;
+}
+
+.menu_bar ul
+{
+	list-style:none;
+	background-color:#00BB00;
+}
+
+.menu_bar ul li
+{
+	display:inline;
+	text-align:center;
+}
+
+.menu_bar ul li a
+{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:16px;
+	text-decoration:none;
+	padding-top:10px;
+	padding-bottom:10px; 
+	padding-left:20px;
+	padding-right:20px; 
+}
+
+.menu_bar ul li a:link{color:#FFFFFF;}
+.menu_bar ul li a:visited{color:#FFFFFF;}
+.menu_bar ul li a:hover{background-color:#CC0000;}
+.menu_bar ul li a:active{background-color:#CC0000;}
+
+
+
+/*************************************************************
 					Banner Styling
 *************************************************************/
 
