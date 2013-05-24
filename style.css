@@ -1,0 +1,75 @@
+/*Dave Ferris*/
+@charset "UTF-8";
+
+/*************************************************************
+					Home Page Styling
+*************************************************************/
+
+body
+{
+	background-color:#555555;
+	color:#FFFFFF;
+	font-family:Geneva, Helvetica, sans-sarif;
+	font-size:11px;
+}
+
+#container
+{
+	width:70%;
+	border-color:#000000;
+	border-width:1px;
+	border-style:solid;
+
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/*************************************************************
+					Banner Styling
+*************************************************************/
+
+#banner
+{
+	width:99%;
+	height:350px;	/*Temporary*/
+	border-color:#CD7F32;
+	border-width:1%;
+	border-style:groove;
+	background-color:#3300BB;
+}
+
+/*************************************************************
+					Cell Styling
+*************************************************************/
+
+.imgcell
+{
+	width:24%;
+	height:240px;	/*Temporary*/
+	border-style:none;
+	float:left;
+}
+
+#container .imgcell
+{
+	margin-top:20px;
+	margin-bottom:15px;
+	margin-left:0.5%;
+	margin-right:0.5%;
+	padding:0px;
+	background-color:#0066BB;
+}
+
+/*************************************************************
+					Feed Styling
+*************************************************************/
+
+.feed_area
+{
+	width:65%;
+	height:400px;	/*Temporary*/
+	border-style:dotted;
+	border-color:#FFFFFF;
+	border-width:1px; 
+	margin-left:0.5%;
+}
