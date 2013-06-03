@@ -4,20 +4,55 @@
 <head>
 	<link href="style.css" rel="stylesheet" type="text/css"/>
 	<title>Ultimate Experimentation Page</title>
+	<script src="js/jquery.js"></script>
+	<script src="js/scripts.js"></script>
 </head>
 
 <body>
 	<div class="container" id="main">
 		<div class="page_header">
 
-			<img src="http://placehold.it/200x75" width="200px" height="75px"/>
+			<a href="home.html"><img src="http://placehold.it/200x75" width="200px" height="75px"/></a>
 
 			<div class="menu_bar">
 				<ul>
-					<li><a href="#">Astronomy</a></li>
-					<li><a href="#">Video Games</a></li>
-					<li><a href="#">Red Wings</a></li> 
-					<li><a href="#">Football</a></li>
+					<li id="astronomy"><a href="#">Astronomy</a>
+						<div class="hover_menu">
+							<ul>
+								<li>Topic1</li>
+								<li>Topic2</li>
+								<li>Topic3</li>
+							</ul>
+						</div>
+					</li>
+					<li id="videogames"><a href="#">Video Games</a>
+						<div class="hover_menu">
+							<ul>
+								<li>Topic1</li>
+								<li>Topic2</li>
+								<li>Topic3</li>
+							</ul>
+						</div>
+					</li>
+					<li id="redwings"><a href="#">Red Wings</a>
+						<div class="hover_menu">
+							<ul>
+								<li>Topic1</li>
+								<li>Topic2</li>
+								<li>Topic3</li>
+							</ul>
+						</div>
+					</li> 
+					<li id="football"><a href="#">Football</a>
+						<div class="hover_menu">
+							<ul>
+								<li>Topic1</li>
+								<li>Topic2</li>
+								<li>Topic3</li>
+							</ul>
+						</div>
+					</li>
+										
 					<li><input type="text" placeholder="Search..."/></li>
 				</ul>
 			</div> <!--menu_bar-->
@@ -27,19 +62,19 @@
 		<div class="clear"></div>
 		
 		<div id="banner">
-			<img src="http://placehold.it/960x350" width="960px" height="350px"/>
+			<img src="images/datsyuk.jpg" width="960px" height="350px"/>
 		</div> <!--banner-->
 
 		<div class="imgcell">
-			<img src="http://placehold.it/230x240" width="100%" height="240px"/>
+			<img src="images/telescope.jpg" width="100%" height="240px"/>
 		</div>
 
 		<div class="imgcell">
-			<img src="http://placehold.it/230x240" width="100%" height="240px"/>
+			<img src="images/worldofwarcraft.jpg" width="100%" height="240px"/>
 		</div>
 
 		<div class="imgcell">
-			<img src="http://placehold.it/230x240" width="100%" height="240px"/>
+			<img src="images/packers.jpg" width="100%" height="240px"/>
 		</div>
 		
 		<div class="imgcell">
@@ -80,20 +115,66 @@
 		</div> <!--feed_area-->
 
 		<div class="sidebar">
-			<div class="top_bar">
-				<div class="bar_header">
-					<h4>Links</h4>
+			<div class="links">
+				<div class="top_bar">
+					<div class="bar_header">
+						<h4>Links</h4>
+						<p class="expand">Expand</p>
+					</div>
+				</div>	<!--top_bar-->
+
+				<ul class="drop_down">
+					<li><a href="#">Link #1</a></li>
+					<li><a href="#">Link #2</a></li>
+					<li><a href="#">Link #3</a></li>
+					<li><a href="#">Link #4</a></li>
+					<p class="collapse">Collapse</p>
+				</ul>
+
+			</div>	<!--links-->
+
+			<div class="page_info">
+				<div class="top_bar">
+					<div class="bar_header">
+						<h4>Page Info</h4>
+						<p class="expand">Expand</p>
+					</div>
+				</div>	<!--top_bar-->
+
+				<div class="drop_down">
+					<h4>Author</h4>
+					<p>Dave Ferris</p>
+					<h4>Designer</h4>
+					<p>Dave Ferris</p>
+					<h4>Last Updated</h4>
+					<p>6/3/13</p>
+					<p class="collapse">Collapse</p>
 				</div>
-			</div>	<!--sidebar-->
 
-			<ul>
-				<li><a href="#">Link #1</a></li>
-				<li><a href="#">Link #2</a></li>
-				<li><a href="#">Link #3</a></li>
-				<li><a href="#">Link #4</a></li>
-			</ul>
+			</div>	<!--page_info-->
 
-		</div>	<!--side_header-->
+			<div class="another_topic">
+				<div class="top_bar">
+					<div class="bar_header">
+						<h4>Another Topic</h4>
+						<p class="expand">Expand</p>
+					</div>
+				</div>	<!--top_bar-->
+
+				<div class="drop_down">
+					<h4>Header</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p class="collapse">Collapse</p>
+				</div>
+
+			</div>	<!--page_info-->
+
+		</div>	<!--sidebar-->
 
 		<div class="clear"></div>	<!--Clearing div--> 
 
